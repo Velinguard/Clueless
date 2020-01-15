@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="order">
+        <packages>
+            <package name = "clueless.api.wallet" />
+
+        </packages>
+    </test>
+    <test name="issuer">
+        <packages>
+            <package name = "clueless.api.issuer" />
+        </packages>
+    </test>
+    <test name="prover">
+        <packages>
+            <package name = "clueless.api.prover" />
+        </packages>
+    </test>
+    <test name="master">
+        <packages>
+            <package name = "clueless.api.master" />
+        </packages>
+    </test>
+    <test name="verifier">
+        <packages>
+            <package name = "clueless.api.verifier" />
+        </packages>
+    </test>
+    <test name="licences">
+        <packages>
+            <package name = "clueless.api.licences" />
+        </packages>
+    </test>
+    <test name="proofs">
+        <packages>
+            <package name = "clueless.api.proofs" />
+        </packages>
+    </test>
+    <test name="filesystem">
+        <packages>
+            <package name = "clueless.api.filesystem" />
+        </packages>
+    </test>
+
+</suite>

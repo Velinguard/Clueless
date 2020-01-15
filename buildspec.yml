@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk11
+  build:
+    commands:
+      - java --version
+      - mvn test
+      - awk -F"," '{ instructions += $4 + $5; covered += $5 } END { print covered, "/", instructions, "instructions covered"; print 100*covered/instructions,"% covered" }' target/site/jacoco/jacoco.csv
+  post_build:
+    commands:
+      - echo Test Build completed on `date`
+      - mvn -Dmaven.test.skip=true package
+artifacts:
+  files:
+    - appspec.yml
+    - target/api-0.0.1-SNAPSHOT.jar
+    - start_server.sh
+  discard-paths: no
