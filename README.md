@@ -4,16 +4,16 @@ Welcome to Clueless
 ## Example User Interface Repositoies
 
 ### Issuer and Ticketing React Website 
-![Issuer Website](cluelessweb.png)
-![Ticketing Website](cluelessticket.png)
+![Issuer Website](resources/cluelessweb.png)
+![Ticketing Website](resources/cluelessticket.png)
 https://github.com/kawmaiparis/clueless-new-frontend/
 
 ### Prover React Native Webapp
-![Prover App](proverlogin.jpg)
+![Prover App](resources/proverlogin.jpg)
 https://github.com/jake-walker-18/clueless-react-prover
 
 ### Verifier React Native Webapp
-![Verifier App](drivinglicence.jpg)
+![Verifier App](resources/drivinglicence.jpg)
 https://github.com/kawmaiparis/clueless-verifier
 
 ## Running Clueless
@@ -41,7 +41,7 @@ To add AWS support add your aws `access key` and `secret key` to:
 ## System Architecture
 
 ### System Diagram
-![System Flow Chart for clueless](CluelessDiagram.svg)
+![System Flow Chart for clueless](resources/CluelessDiagram.svg)
 
 On the left, the Clients (Verifier, Prover...) represent who is responsible for each step of the pipeline. The master is either automated on the server, or should be done when setting up a system. The different clients correspond with the Controller the endpoints will be associated with. 
 
@@ -254,7 +254,7 @@ curl -X DELETE "http://$URI/close-wallet?walletHandle=1" -H "accept: */*"
 
 ## Developer
 ### System Architecture
-![System Architecture for clueless](CluelessArchitecture.svg)
+![System Architecture for clueless](resources/CluelessArchitecture.svg)
 
 ### Add New Proof
 To add a new proof you need to add the new proof to `proofs.Proofs` following the structure: 
