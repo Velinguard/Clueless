@@ -1,5 +1,6 @@
 # Clueless
-Welcome to Clueless
+Welcome to 
+![Clueless Logo](resources/Clueless.jpg)
 
 ## Example User Interface Repositoies
 
